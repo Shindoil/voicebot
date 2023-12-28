@@ -41,7 +41,7 @@ def main():
         st.session_state["check_reset"] = False
 
     with st.sidebar:
-        openai.api_key = st.text_input(label='OPENAPI API 키', placeholder='API 키를 입력하세요', value='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', type='password')
+        openai.api_key = st.text_input(label='OPENAPI API 키', placeholder='API 키를 입력하세요', value='')
         st.markdown('---')
         model = st.radio(label='GPT모델', options=['gpt-4', 'gpt-3.5-turbo'], index=1)
         st.markdown('---')
